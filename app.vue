@@ -37,7 +37,7 @@
     
     <footer class="app-footer">
       <div class="footer-content">
-        <p>&copy; {{ new Date().getFullYear() }} 권민영. 모든 권리 보유.</p>
+        <p>&copy; {{ new Date().getFullYear() }} Min-young Kwon. All rights reserved.</p>
         <div class="social-links">
           <a href="https://github.com/min-eee" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i class="bi bi-github"></i>
