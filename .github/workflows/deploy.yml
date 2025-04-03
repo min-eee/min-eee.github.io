@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # main 브랜치에 푸시할 때 실행됩니다.
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      
+      - name: Install Dependencies 📦
+        run: npm install
+      
+      - name: Generate Static Files 🏗️
+        run: npm run generate
+      
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist  # 배포할 빌드 결과물이 있는 폴더
+          branch: gh-pages  # 배포될 브랜치
+          clean: true  # 배포 전 이전 파일 제거 

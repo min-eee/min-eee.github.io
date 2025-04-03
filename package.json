@@ -1,0 +1,15 @@
+{
+  "name": "min-eee.github.io",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "devDependencies": {
+    "nuxt": "^3.9.3",
+    "push-dir": "^0.4.1"
+  }
+} 
