@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   app: {
-    baseURL: '/min-eee.github.io/', // GitHub Pages의 리포지토리 이름에 맞게 설정
+    baseURL: '/', // GitHub Pages의 리포지토리 이름에 맞게 설정
     buildAssetsDir: 'assets', // 기본값은 '_nuxt'
     head: {
       title: '권민영 포트폴리오',
